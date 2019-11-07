@@ -1,0 +1,17 @@
+{
+  "name": "e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-frontend": "BROWSER=none npm start --prefix ../frontend/",
+    "cy:run": "cypress run",
+    "test": "start-server-and-test start-frontend http://localhost:3000 cy:run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.6.0",
+    "start-server-and-test": "^1.10.6"
+  }
+}
